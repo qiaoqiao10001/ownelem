@@ -1,0 +1,29 @@
+// 一像素border
+@media (-webkit-min-divice-pixel-ratio:1.5),(min-divice-pixel-ratio:1.5)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+
+
+@media (-webkit-min-divice-pixel-ratio:2),(min-divice-pixel-ratio:2)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+
+
+body,html
+  line-height: 1
+  font-weight: 200
+  font-family: 'PingFang SC'
+
+.clearfix
+  display inline-block
+  &:after
+    display block
+    content ""
+    height 0
+    line-height 0
+    clear both
+    visibility hidden
